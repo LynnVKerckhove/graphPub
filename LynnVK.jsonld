@@ -1,0 +1,30 @@
+{
+    "@context": {
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "ex": "http://example.org/",
+      "dbpedia": "http://dbpedia.org/resource/"
+    },
+    "@graph": [
+      {
+        "@id": "ex:ClassKG25",
+        "@type": "foaf:Group",
+        "foaf:name": "Knowledge Graph 2024-2025"
+      },
+      {
+        "@id": "ex:Lynn",
+        "@type": ["foaf:Person", "foaf:Agent"],
+        "foaf:name": "Lynn Van Kerckhove",
+        "foaf:mbox": "mailto:lynn.vankerckhove@cultuurconnect.be",
+        "foaf:topic_interest": { "@id": "dbpedia:Knowledge_graph" },
+        "foaf:member": { "@id": "ex:ClassKG25" },
+        "foaf:knows": [
+          {
+            "foaf:name": "Guy Cools"
+          },
+          {
+            "foaf:name": "Erwin Geeraerts"
+          }
+        ]
+      }
+    ]
+  }
