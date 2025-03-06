@@ -4,30 +4,25 @@
 <meta charset="utf-8">
 <link rel="meta" href="#me" />
 <script type="text/turtle" id="me">
-@prefix schema: <http://schema.org/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix wd: <http://www.wikidata.org/entity/> .
 
-<https://gc-cc.github.io/#me> a foaf:Person , foaf:Agent ;
-        foaf:name "Guy Cools"^^xsd:string ;
-        foaf:birthday "1973-05-09"^^xsd:date ;
-        foaf:gender "man"@nl ;
-		schema:worksFor "Cultuurconnect"^^xsd:string , "https://www.cultuurconnect.be"^^rdf:HTML ;
-		schema:jobTitle "Domeinexpert Systeemoverschrijdende metadata"^^xsd:string ;
-        foaf:Project "Open Vlacc"^^xsd:string ;
-        foaf:based_near wd:Q1296 ;
-        foaf:img "https://www.cultuurconnect.be/sites/default/files/styles/teamlid_teaser/public/2022-09/CC-portretten_%28c%29theuntold%20%2895%20van%20150%29.jpg"^^rdf:HTML ;
-		foaf:knows <https://lvk.github.io/#me> , <https://erwingeeraerts.github.io/#me> .
+    @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 
-<https://pietercolpaert.be/teaching/kg/#2024-2025> a foaf:Group ;
-        foaf:name "Knowledge Graphs 2024-2025"^^xsd:string ;
-        foaf:member <https://gc-cc.github.io/#me> .
+    <https://pietercolpaert.be/teaching/kg/#2024-2025> a foaf:Group ;
+        foaf:name "Knowledge Graph 2024-2025" ;
+        foaf:member <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl> .
+    
+    <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl> a foaf:Person, foaf:Agent ;
+        foaf:name "Lynn Van Kerckhove" ;
+        foaf:mbox <mailto:lynn.vankerckhove@cultuurconnect.be> ;
+        foaf:topic_interest 
+        <http://dbpedia.org/resource/Knowledge_graph> ;
+        foaf:member <https://pietercolpaert.be/teaching/kg/#2024-2025> ;
+        foaf:knows <https://gc-cc.github.io/#me> .
+
 </script>
 </head>
 <body>
 <h1>Assignment 2 Knowledge Graphes</h1>
-<p>Link to <a href="/docs/LynnVK.ttl">Turtle file</a></p>
+<p>Link to <a href="docs/LynnVK.ttl">Turtle file</a></p>
 </body>
 </html>

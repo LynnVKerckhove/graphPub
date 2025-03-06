@@ -1,15 +1,13 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix ex: <http://example.org/> .
 
-ex:ClassKG25 a foaf:Group ;
-    foaf:name "Knowledge Graph 2024-2025" .
+<https://pietercolpaert.be/teaching/kg/#2024-2025> a foaf:Group ;
+    foaf:name "Knowledge Graph 2024-2025" ;
+    foaf:member <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl> .
 
-ex:Lynn a foaf:Person, foaf:Agent ;
+<https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl> a foaf:Person, foaf:Agent ;
     foaf:name "Lynn Van Kerckhove" ;
     foaf:mbox <mailto:lynn.vankerckhove@cultuurconnect.be> ;
     foaf:topic_interest 
     <http://dbpedia.org/resource/Knowledge_graph> ;
-    foaf:member ex:ClassKG25 ;
-    foaf:knows 
-        [ foaf:name "Guy Cools" ], 
-        [  foaf:name "Erwin Geeraerts" ] .
+    foaf:member <https://pietercolpaert.be/teaching/kg/#2024-2025> ;
+    foaf:knows <https://gc-cc.github.io/#me> .
