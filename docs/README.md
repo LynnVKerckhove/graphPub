@@ -1,16 +1,17 @@
-Assessment 2 Knowledge Graphs
+Assignment 2 Knowledge Graphs
+url:https://lynnvkerckhove.github.io/graphPub/#me <!--- not useable as a file title :) --->
 
 lynnvankerckhove@L043-CUL-2022 ~ % curl -I https://lynnvkerckhove.github.io/graphPub/#me            
 HTTP/2 200 
 server: GitHub.com
-content-type: text/html; charset=utf-8 <!--- disadvantage of this system: content html, only hidden RDF --->
+content-type: text/html; charset=utf-8 <!--- disadvantage of this system: content html, only hidden RDF. The Github server doesn't offer the Turtle direct through content negotiation, so it is actually not dereferenceable --->
 permissions-policy: interest-cohort=()
 last-modified: Thu, 06 Mar 2025 20:53:23 GMT
 access-control-allow-origin: * <!--- but CORS is good on Github: allows all --->
 strict-transport-security: max-age=31556952
 etag: "67ca0b43-3a2"
 expires: Thu, 06 Mar 2025 21:09:40 GMT
-cache-control: max-age=600 <!--- caching based on expiration --->
+cache-control: max-age=600 <!--- caching based on expiration, this is probably a static file thus could be higher, there is also an etag with which clients could see if there is a new version --->
 x-proxy-cache: MISS
 x-github-request-id: 75D4:394A50:649F73:655DCF:67CA0CBA
 accept-ranges: bytes
@@ -21,14 +22,14 @@ x-served-by: cache-bru1480078-BRU
 x-cache: MISS
 x-cache-hits: 0
 x-timer: S1741294780.344333,VS0,VE167
-vary: Accept-Encoding
+vary: Accept-Encoding <!--- no vary: Accept, so no content negotation, only different version based on compression, not on format -->
 x-fastly-request-id: e308d8c09ed54f9dbd2cac1cb344e3c21846a104
 content-length: 930
 
 lynnvankerckhove@L043-CUL-2022 ~ % curl -I https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl                
 HTTP/2 200 
 server: GitHub.com
-content-type: text/turtle; charset=utf-8 <!--- here actual turtle --->
+content-type: text/turtle; charset=utf-8 <!--- here actual turtle, maybe it is better (as it is published on Github Pages) to put this URI in the Turtle file  --->
 permissions-policy: interest-cohort=()
 last-modified: Thu, 06 Mar 2025 22:58:27 GMT
 access-control-allow-origin: *

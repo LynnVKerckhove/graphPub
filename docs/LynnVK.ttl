@@ -15,4 +15,3 @@
     schema:knows <https://gc-cc.github.io/#me>, <http://lippelo.me/#erwin.geeraerts> ;
     foaf:knows <https://gc-cc.github.io/#me>, <http://lippelo.me/#erwin.geeraerts> ;
     schema:memberOf <https://pietercolpaert.be/teaching/kg/#2024-2025> .
-
