@@ -5,24 +5,29 @@
 <link rel="meta" href="#me" />
 <script type="text/turtle" id="me">
 
-    @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-
-    <https://pietercolpaert.be/teaching/kg/#2024-2025> a foaf:Group ;
-        foaf:name "Knowledge Graph 2024-2025" ;
-        foaf:member <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl> .
+    @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+    @prefix schema: <https://schema.org/> .
     
-    <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl> a foaf:Person, foaf:Agent ;
+    <https://pietercolpaert.be/teaching/kg/#2024-2025> a foaf:Group, schema:EducationalOrganization ;
+        foaf:name "Knowledge Graph 2024-2025" ;
+        schema:name "Knowledge Graph 2024-2025" ;
+        foaf:member <https://lynnvkerckhove.github.io/graphPub/#me> .
+    
+    <https://lynnvkerckhove.github.io/graphPub/#me> a foaf:Person, foaf:Agent, schema:Person ;
         foaf:name "Lynn Van Kerckhove" ;
+        schema:name "Lynn Van Kerckhove" ;
         foaf:mbox <mailto:lynn.vankerckhove@cultuurconnect.be> ;
-        foaf:topic_interest 
-        <http://dbpedia.org/resource/Knowledge_graph> ;
-        foaf:member <https://pietercolpaert.be/teaching/kg/#2024-2025> ;
-        foaf:knows <https://gc-cc.github.io/#me> .
+        schema:email "mailto:lynn.vankerckhove@cultuurconnect.be" ;
+        foaf:topic_interest <http://dbpedia.org/resource/Knowledge_graph> ;
+        schema:knows <https://gc-cc.github.io/#me>, <http://lippelo.me/#erwin.geeraerts> ;
+        foaf:knows <https://gc-cc.github.io/#me>, <http://lippelo.me/#erwin.geeraerts> ;
+        schema:memberOf <https://pietercolpaert.be/teaching/kg/#2024-2025> .    
 
 </script>
 </head>
 <body>
 <h1>Assignment 2 Knowledge Graphs</h1>
-<p>Link to <a href="docs/LynnVK.ttl">turtle file</a></p>
+<p>Hi, I am Lynn!</p>
+<p>Link to the <a href="docs/LynnVK.ttl">turtle file</a></p>
 </body>
 </html>
