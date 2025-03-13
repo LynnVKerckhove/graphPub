@@ -4,7 +4,7 @@
 <https://pietercolpaert.be/teaching/kg/#2024-2025> a foaf:Group, schema:EducationalOrganization ;
     foaf:name "Knowledge Graph 2024-2025" ;
     schema:name "Knowledge Graph 2024-2025" ;
-    foaf:member <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> .
+    foaf:member <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> , <https://gc-cc.github.io/me.ttl#me>, <http://lippelo.me/#erwin.geeraerts> , <https://users.ugent.be/~eadleers/>.
 
 <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> a foaf:Person, foaf:Agent, schema:Person ;
     foaf:name "Lynn Van Kerckhove" ;
