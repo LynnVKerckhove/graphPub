@@ -2,7 +2,7 @@
 @prefix schema: <https://schema.org/> .
 
 <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> a foaf:Person, foaf:Agent, schema:Person ;
-    <http://www.w3.org/ns/solid/terms#oidcIssuerRegistrationToken> "f2f77e3b-fe47-463e-9901-6c41b5e68cef" ;
+    <http://www.w3.org/ns/solid/terms#oidcIssuerRegistrationToken> "be4fa237-9e99-45de-b317-2d49b50a9c40" ;
     foaf:name "Lynn Van Kerckhove" ;
     schema:name "Lynn Van Kerckhove" ;
     foaf:mbox <mailto:lynn.vankerckhove@cultuurconnect.be> ;
