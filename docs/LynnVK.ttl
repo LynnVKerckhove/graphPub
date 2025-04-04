@@ -1,12 +1,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix schema: <https://schema.org/> .
 
-<https://pietercolpaert.be/teaching/kg/#2024-2025> a foaf:Group, schema:EducationalOrganization ;
-    foaf:name "Knowledge Graph 2024-2025" ;
-    schema:name "Knowledge Graph 2024-2025" ;
-    foaf:member <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> , <https://gc-cc.github.io/me.ttl#me>, <http://lippelo.me/me.ttl> , <https://users.ugent.be/~eadleers/>.
-
 <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> a foaf:Person, foaf:Agent, schema:Person ;
+    <http://www.w3.org/ns/solid/terms#oidcIssuerRegistrationToken> "f2f77e3b-fe47-463e-9901-6c41b5e68cef" ;
     foaf:name "Lynn Van Kerckhove" ;
     schema:name "Lynn Van Kerckhove" ;
     foaf:mbox <mailto:lynn.vankerckhove@cultuurconnect.be> ;
@@ -15,3 +11,8 @@
     schema:knows <https://gc-cc.github.io/me.ttl#me>, <http://lippelo.me/me.ttl> , <https://users.ugent.be/~eadleers/> ;
     foaf:knows <https://gc-cc.github.io/me.ttl#me>, <http://lippelo.me/me.ttl> , <https://users.ugent.be/~eadleers/> ;
     schema:memberOf <https://pietercolpaert.be/teaching/kg/#2024-2025> .
+
+    <https://pietercolpaert.be/teaching/kg/#2024-2025> a foaf:Group, schema:EducationalOrganization ;
+    foaf:name "Knowledge Graph 2024-2025" ;
+    schema:name "Knowledge Graph 2024-2025" ;
+    foaf:member <https://lynnvkerckhove.github.io/graphPub/docs/LynnVK.ttl#me> , <https://gc-cc.github.io/me.ttl#me>, <http://lippelo.me/me.ttl> , <https://users.ugent.be/~eadleers/>.
